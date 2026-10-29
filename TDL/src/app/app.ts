@@ -25,7 +25,7 @@ export class App {
     this.tasks.push({
       id: this.nextId++,
       text,
-      status: false
+      statusOfCompletion: false
     });
 
     this.newTask = "";
