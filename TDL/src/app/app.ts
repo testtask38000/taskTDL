@@ -32,4 +32,8 @@ export class App {
 
     this.newTask = "";
   }
+
+  complitionTaskStatus( task: {statusOfCompletion: boolean}): void {
+    task.statusOfCompletion = !task.statusOfCompletion;
+  }
 }

@@ -32,6 +32,10 @@ li label {
     align-items: center;
 }
 
+.done {
+    text-decoration: line-through;
+}
+
 li button {
     background: rgb(248, 95, 95);
 }
