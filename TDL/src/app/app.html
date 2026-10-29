@@ -1,15 +1,16 @@
 <div class="tdl-container">
   <h1>To Do list</h1>
 
-  <form action="">
-    <input type="text" name="" id="">
+  <form (ngSubmit)="addTask()">
+    <input type="text" name="newTask" [(ngModel)]="newTask" id="">
     <button type="submit">Add</button>
   </form>
 
   <ul>
-    <li>
+    <li *ngFor="let task of tasks">
       <label for="">
         <input type="checkbox" name="" id="">
+        {{ task.text }}
       </label>
       <button type="button">d</button>
     </li>
