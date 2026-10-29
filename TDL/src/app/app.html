@@ -12,7 +12,7 @@
         <input type="checkbox" [checked]="task.statusOfCompletion" (change)="complitionTaskStatus(task)" name="" id="">
         <span [class.done]="task.statusOfCompletion">{{ task.text }}</span>
       </label>
-      <button type="button">d</button>
+      <button type="button" (click)="deleteTask(task.id)">d</button>
     </li>
   </ul>
 </div>

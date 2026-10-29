@@ -36,4 +36,8 @@ export class App {
   complitionTaskStatus( task: {statusOfCompletion: boolean}): void {
     task.statusOfCompletion = !task.statusOfCompletion;
   }
+  
+  deleteTask(id: number): void {
+    this.tasks = this.tasks.filter(task => task.id !== id);
+  }
 }
